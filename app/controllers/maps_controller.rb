@@ -1,9 +1,7 @@
 class MapsController < ApplicationController
-  def index
-    client = AdvApi::V1::Client.new
-    Maps::CreateService.new(client: client).call
-  end
-
   def create
+    client = AdvApi::V1::Client.new
+    @map = Maps::CreateService.new(client: client).call
+    json_response(@map, :created)
   end
 end
