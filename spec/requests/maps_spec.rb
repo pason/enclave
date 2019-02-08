@@ -1,9 +1,6 @@
-require 'rails_helper'
+require 'spec_helper'
 
 RSpec.describe 'Maps API' do
-  # Initialize the test data
-  let!(:map) { create(:map) }
-
   # Test suite for POST /maps
   describe 'POST /maps' do
     let(:valid_attributes) do
