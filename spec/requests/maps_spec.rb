@@ -15,7 +15,7 @@ RSpec.describe 'Maps API' do
       end
 
       it 'changes maps count by 1' do
-         expect { post("/maps") }.to change { Map.count }.by(1)
+         expect { post("/api/maps") }.to change { Map.count }.by(1)
       end
     end
   end
