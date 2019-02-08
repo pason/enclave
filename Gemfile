@@ -12,6 +12,7 @@ gem 'puma', '~> 3.11'
 
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'httparty'
+gem 'active_model_serializers', '~> 0.10.0'
 
 group :development do
   gem 'listen', '>= 3.0.5', '< 3.2'

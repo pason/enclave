@@ -2,13 +2,13 @@ require 'spec_helper'
 
 RSpec.describe 'Maps API' do
   # Test suite for POST /maps
-  describe 'POST /maps' do
+  describe 'POST /api/maps' do
     let(:valid_attributes) do
       { }
     end
 
     context 'when request attributes are valid' do
-      before { post "/maps", params: valid_attributes }
+      before { post "/api/maps", params: valid_attributes }
 
       it 'returns status code 201' do
         expect(response).to have_http_status(201)

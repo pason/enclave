@@ -11,6 +11,9 @@ class Tile < ApplicationRecord
   scope :lands, -> { where(role: ROLES[:land]) } 
   scope :unassigned, -> { where(island_id: nil) }
 
+  alias_attribute :x, :coordinate_x
+  alias_attribute :y, :coordinate_y
+
   def self.map_role(role)
     ROLES[role.to_sym]
   end
