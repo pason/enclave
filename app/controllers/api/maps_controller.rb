@@ -6,4 +6,9 @@ class Api::MapsController < ApplicationController
 
     json_response(@map, :created)
   end
+
+  def show
+    @map = Map.find(params[:id])
+    render plain: @map.to_ascii
+  end
 end
