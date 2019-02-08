@@ -1,24 +1,15 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+* Install Docker and Docker-Compose
+Build containers
+  cd advanon/
+  docker-compose build
+Start web and db containers
+  docker-compose up -d web
 
-* Ruby version
+* Run tests and test DB
+  docker-compose run -e RAILS_ENV=test web bundle exec rake db:create
+  docker-compose exec web bundle exec rake db:test:load
+  docker-compose exec web bundle exec rspec
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
