@@ -15,6 +15,7 @@ Build containers
   
 
 * Run tests and test DB
+
   `docker-compose run -e RAILS_ENV=test web bundle exec rake db:create`
   
   `docker-compose exec web bundle exec rake db:test:load`
