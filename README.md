@@ -1,4 +1,4 @@
-# Given a boolean 2D matrix, find the number of islands. A group of connected 1s forms an island. 
+Given a boolean 2D matrix, find the number of islands. A group of connected 1s forms an island. 
 
 
 * Install Docker and Docker-Compose
