@@ -4,7 +4,7 @@ Given a boolean 2D matrix, find the number of islands. A group of connected 1s f
 * Install Docker and Docker-Compose
 
 Build containers
-  cd advanon/
+  cd enclave
   docker-compose build
 Start web and db containers
   docker-compose up -d web
